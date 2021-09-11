@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Selections from './Selections'
 import Select from 'react-select'
 
@@ -14,6 +14,11 @@ const SelectSymtoms = ({onSubmit}) => {
     ]
 
     const [selectedOption, setSelectedOption] = useState(null);
+
+    useEffect(
+        onChange(),
+        [selectedOption]
+    )
 
     return (
         <div className="select-symptoms"> 
