@@ -15,10 +15,16 @@ const SelectSymtoms = ({onSubmit}) => {
 
     const [selectedOption, setSelectedOption] = useState(null);
 
-    useEffect(
-        onChange(),
-        [selectedOption]
-    )
+    // useEffect(
+    //     () => {
+    //         function setSymptoms () {
+              
+    //         }
+        
+    //         getTasks()
+    //     },
+    //     [selectedOption]
+    // )
 
     return (
         <div className="select-symptoms"> 
