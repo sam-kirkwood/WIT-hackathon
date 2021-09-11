@@ -1,4 +1,5 @@
 import './App.css';
+import Form from './components/Form';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -22,6 +23,7 @@ function App() {
           <li>
             <Link to="/dashboard">Dashboard</Link>
           </li>
+          <Form/>
         </ul>
 
         <hr />
