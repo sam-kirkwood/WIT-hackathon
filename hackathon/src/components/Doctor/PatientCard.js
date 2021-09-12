@@ -14,7 +14,7 @@ const PatientCard = ({name, symptom, notes, showInfo, previous, values, question
                 }
                
             </div>
-            <p><i className="fas fa-syringe"></i>{symptom}</p>
+            <p><i className="fas fa-syringe fa-lg"></i>{ }{symptom}</p>
             <h4>Notes</h4>
             <h5>{notes}</h5>
                        

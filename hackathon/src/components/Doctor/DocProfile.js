@@ -46,6 +46,45 @@ const DocProfile = () => {
                 text: 'Did you take both doses of amoxicillin yesterday?'
             },
         ]
+        },
+        {id: 2, name: "Jane", symptom: "Heart burn", previous: [
+            {
+                id: 1,
+                day: 'Saturday',
+                symptom: 'Heart Burn'
+            },
+            {
+                id: 2,
+                day: 'Friday',
+                symptom: 'Cough'
+            },
+            {
+                id: 3,
+                day: 'Thursday',
+                symptom: 'Fever'
+            },
+
+        ], notes: "Checked the temperature for the last few day, seems to be improving quite rapidly.",
+            values: [ 
+                {
+                    all: ["Chest pain", "Cough"], 
+                    data: [5, 7],
+                    priority: 25,
+                    prescription: [50, 70, 80, 80, 75, 70, 25]
+                }
+            ],
+        questions: [
+            {
+                id: 1,
+                type: 'Yes/No',
+                text: 'Have your symptoms gotten any worse since yesterday?'
+            },
+            {
+                id: 2,
+                type: 'Yes/No',
+                text: 'Do you experience and lower back pain?'
+            },
+        ]
         }
 
     ]
